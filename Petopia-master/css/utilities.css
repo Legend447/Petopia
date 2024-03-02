@@ -1,0 +1,285 @@
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-left: calc(var(--bs-gutter-x) * -.5)
+}
+
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-top: var(--bs-gutter-y)
+}
+
+.col {
+    flex: 1 0 0%;
+    padding: 15px;
+}
+
+.row-cols-auto>* {
+    flex: 0 0 auto;
+    width: auto
+}
+
+.row-cols-1>* {
+    flex: 0 0 auto;
+    width: 100%
+}
+
+.row-cols-2>* {
+    flex: 0 0 auto;
+    width: 50%
+}
+
+.row-cols-3>* {
+    flex: 0 0 auto;
+    width: 33.3333333333%
+}
+
+.row-cols-4>* {
+    flex: 0 0 auto;
+    width: 25%
+}
+
+.row-cols-5>* {
+    flex: 0 0 auto;
+    width: 20%
+}
+
+.row-cols-6>* {
+    flex: 0 0 auto;
+    width: 16.6666666667%
+}
+
+.col-lg-auto {
+    flex: 0 0 auto;
+    width: auto
+}
+.col-lg-1 {
+    flex: 0 0 auto;
+    width: 8.33333333%
+}
+.col-lg-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%
+}
+.col-lg-3 {
+    flex: 0 0 auto;
+    width: 25%
+}
+.col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%
+}
+
+.col-auto {
+    flex: 0 0 auto;
+    width: auto
+}
+
+.col-1 {
+    flex: 0 0 auto;
+    width: 8.33333333%
+}
+
+.col-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%
+}
+
+.col-3 {
+    flex: 0 0 auto;
+    width: 25%
+}
+
+.col-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%
+}
+
+.col-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%
+}
+
+.justify_content_center {
+    justify-content: center;
+}
+
+/* Header */
+
+header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 10;
+    background-color:#f4d0d9;
+}
+
+/* header::before {
+    content: "";
+    position: fixed;
+    background: #333;
+    opacity: 0.2;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+} */
+
+header .menuLeft{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+header .menuLeft nav{
+    display: flex;
+    gap: 20px;
+}
+header .menuLeft nav a{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding-bottom: 5px;
+
+}
+.cart-icon::before {
+    color: #000;
+}
+.cart-icon:hover::before {
+    color: #df3174;
+}
+#current {
+    color: #ed4d8b;
+}
+header .menuRight div:hover,
+header .menuLeft a:hover{
+    color: #ed4d8b;
+}
+header .menuRight{
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
+header .logo{
+    font-size: 28px;
+    font-weight: 900;
+}
+header .menuRight i {
+    padding-bottom: 5px;
+}
+
+
+header .menuLeft a::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+}
+header .menuLeft a:hover::before{
+    border-bottom: 2px solid #be064c;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer{
+    background-color: #F3A8BB;
+    padding: 20px 40px;
+    display: flex;
+    border-radius: 0 0 16px 16px;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.footer .infor{
+    color: white;
+}
+.footer .infor .logo{
+    font-size: 28px; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    font-weight: 800; 
+    font-style: italic;
+    margin-bottom: 5px;
+}
+.footer .infor .logo img{
+    width: fit-content;
+    height: 60px;
+    margin-right: -15px;
+    padding-top: 10px;
+}
+.footer .infor .address,
+.footer .infor .phone{
+    font-weight: 600;
+    margin: 20px 0;
+}
+.footer .infor .address i,
+.footer .infor .phone i{
+    color: #be064c;
+}
+.footer .infor .network{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between; 
+    width: 50%;
+}
+.footer .infor .network i{
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    color: #be064c;
+    background-color: white
+    
+}
+.footer .cooporate,
+.footer .information,
+.footer .service{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.footer .infor .network,
+.footer .infor .phone,
+.footer .infor .address,
+.footer .cooporate p,
+.footer .information p,
+.footer .service p{
+    cursor: pointer;
+}
+
+.footer .infor .network i:hover {
+    color: #ff0062;
+}
+
+.cooporate > p:first-child,
+.information > p:first-child,
+.service > p:first-child {
+    color: #be064c;
+}
+
+.return_btn i::before {
+    color: #000;
+    font-size: 2.5rem;
+}
+.return_btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    opacity: 0.4;
+}

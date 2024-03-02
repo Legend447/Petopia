@@ -1,0 +1,418 @@
+*, body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: fit-content;
+    height: 75px;
+    margin-right: -15px;
+    padding-top: 10px;
+}
+
+.ads {
+    width: 70%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+ .ads .adsDog{
+    background-image: url(https://www.usatoday.com/money/blueprint/images/uploads/2023/10/03020348/dog-ownership-cost-statistics-e1696313105307.jpg?width=700&fit=cover&format=webp);
+    width: 48%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.adsDog p{
+    color: white;
+}
+.adsDog .line1{
+    font-size: 20px; 
+    font-weight: 800;
+    padding: 40px 0 0 270px;
+    margin-bottom: 0;
+}
+.adsDog .line2{
+    font-size: 14px;
+    padding: 0 0 0 270px;
+}
+.adsDog button{
+    margin-left: 270px;
+    background-color: #be064c;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 800;
+}
+.ads .adsCat{
+    background-image:url(https://www.hsccvt.org/files/_cache/35db4e8c6652500b7c7660fcbf776bef.jpg);
+    width: 48%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.adsCat p{
+    color: white;
+}
+.adsCat .line1{
+    font-size: 20px; 
+    font-weight: 800;
+    padding: 40px 0 0 50px;
+    margin-bottom: 0;
+}
+.adsCat .line2{
+    font-size: 14px;
+    padding: 0 0 0 50px;
+}
+.adsCat button{
+    margin-left: 50px;
+    background-color: #be064c;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: 800;
+}
+.clientReview{
+    background-image: url(https://www.pngall.com/wp-content/uploads/5/Pink-Watercolor-Transparent.png);
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 80px;
+}
+.text .line1{
+    padding-top: 80px;
+    text-align: center;
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+}
+.text .line2{
+    width: 50%;
+    margin: 0 auto;
+    font-size: 16px;
+    color: rgb(34, 32, 32);
+}
+.text .designer{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.text .designer img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.designer .infor .line3{
+    font-size: 18px;
+    font-weight: 800;
+}
+.bestSellerProducts .product .addToCart{
+    padding: 10px 10px;
+    border: none;
+    background-color: #F3A8BB;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+}
+
+.product {
+    translate: 0 0;
+    transition: translate 0.3s;
+}
+.product:hover {
+    translate: 0 -10px;
+    transition: translate 0.3s;
+}
+.service{
+    width: 90%;
+}
+.catCombo .infor,
+.kittenCombo .infor,
+.dogCombo .infor,
+.puppyCombo .infor{
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+    position: relative;
+}
+.catCombo .infor{
+    background-image: url(https://images.radio.com/aiu-media/GettyImages1273269534-b0a4a899-23f3-40b4-87e1-679608d8ef29.jpg);
+}
+.kittenCombo .infor{
+    background-image: url(https://img.freepik.com/premium-photo/bright-kitten-lies-sofathe-girl-combs-hair-funny-cat_650650-3526.jpg);
+}
+.dogCombo .infor{
+    background-image: url(https://a-z-animals.com/media/2022/11/shutterstock_1042007923.jpg);
+}
+.puppyCombo .infor{
+    background-image: url(https://d.newsweek.com/en/full/2075170/dog-groomers.jpg?w=1200&f=0fa9ee474ddce740bd227ea31dacdb97);
+    position: relative;
+}
+.kittenCombo .infor .detail,
+.catCombo .infor .detail,
+.dogCombo .infor .detail,
+.puppyCombo .infor .detail{
+    position: absolute;
+    top: 370px;
+    background-color: #be064c;
+    padding: 20px;
+    display: flex;
+}
+.bookService{
+    position: absolute;
+    top: 320px;
+    left: 40px;
+    background-color: #be064c;
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 10px 24px;
+    z-index: 100;
+    border-radius: 40px;
+    text-shadow: 8px 8px 8px #120249;
+}
+ .infor .detail .sub{
+    width: 65%;
+    color: white;
+    font-size: 18px;
+    margin: 0 auto;
+ }
+.infor .detail .name{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.infor .detail .desc{
+    font-size: 20px;
+    font-weight: 900;
+    color: #ffd43b;
+    text-shadow: 4px 4px 4px #3f318f;
+}
+.infor .detail .price{
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+}
+.service{
+    width: 100%;
+}
+.service .title{
+    margin: 20px 0;
+}
+.service .weight{
+    display: flex;
+}
+.service .weight .weightMin{
+    color: white;
+    background-color: rgb(8, 133, 8);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+    width: 50%;
+}
+.service .weight .weightMax{
+    color: white;
+    background-color: rgb(10, 42, 139);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px;
+    width: 50%;
+}
+.steps{
+    display: flex;
+    gap: 30px;
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.steps .step{
+    background-color: #be064c;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    border: none;
+    border-radius: 50%;
+    padding: 16px;
+}
+.steps .detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.steps .nameStep{
+    color: #be064c;
+    font-size: 20px;
+    font-weight: 600;
+}
+.container .title{
+    margin: 20px 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+.container .bestSellerProducts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px auto 100px auto;
+    gap: 25px;
+}
+.bestSellerProducts .product{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    justify-self: center;
+    box-shadow: 6px 6px 6px 6px #fcfbfb;
+    cursor: pointer;
+}
+
+.properties p {
+    margin: 10px 0;
+}
+.product .properties{
+    text-align: center;
+    background-color: white;
+}
+.bestSellerProducts .product img{
+    width: 100%;
+    height: 200px;
+}
+.bestSellerProducts .product .price{
+    color: #ed4d8b;
+    font-weight: bolder;
+}
+.bestSellerProducts .rate i{
+    color: #ffd43b;
+}
+.container{
+    margin: 0 120px;
+}
+
+.service_section {
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0 30px;
+}
+
+.service_item {
+    z-index: 1;
+    position: relative;
+    padding: 42px 40px;
+    background-size: auto;
+    transition: .6s cubic-bezier(.165, .84, .44, 1);
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    border: 2px solid #ebe5f7;
+    background-position: right bottom;
+    height: 100%;
+}
+
+.service_item .title_wrap {
+    display: flex;
+    margin-bottom: 8px;
+    align-items: center
+}
+
+.service_item .item_icon {
+    width: 60px;
+    height: 60px;
+    flex: 0 0 60px;
+    margin-right: 15px;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center
+}
+
+.service_item .item_title {
+    line-height: 1;
+    font-size: 24px;
+    transition: .6s cubic-bezier(.165, .84, .44, 1)
+}
+
+.service_item p {
+    font-size: 17px;
+    margin-bottom: 12px;
+    transition: .6s cubic-bezier(.165, .84, .44, 1)
+}
+
+.service_item .item_price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0e081e;
+    margin-bottom: 20px;
+    transition: .6s cubic-bezier(.165, .84, .44, 1)
+}
+
+.service_item .btn_unfill {
+    color: #333
+}
+
+.service_item .btn_unfill:before {
+    background-color: #ffda47
+}
+
+.service_item .decoration_image {
+    z-index: -1;
+    right: 20px;
+    bottom: 15px;
+    position: absolute
+}
+
+.service_item:hover {
+    border-color: #f0688a;
+    background-color: #f3a8bb
+}
+
+.service_item:hover .item_price span,
+.service_item:hover .item_title,
+.service_item:hover p {
+    color: #fff
+}
+
+.service_item:hover .btn_unfill {
+    color: #fff
+}
+
+.section_title .sub_title {
+    display: block;
+    line-height: 1;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+    text-transform: uppercase
+}
+
+.section_title {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.section_title .title_text {
+    font-size: 46px;
+    margin-top: 50px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #be064c;
+}
